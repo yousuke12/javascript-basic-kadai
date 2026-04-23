@@ -1,9 +1,8 @@
 const today = new Date();
-const year = today.getUTCFullYear();
-const month = today.getUTCMonth();
-const day = today.getUTCDate();
+const year = today.getFullYear();
+const month = today.getMonth() + 1;
+const day = today.getDate();
 
-console.log(new Date());
-console.log(today.getUTCFullYear());
-console.log(today.getUTCMonth() + 1);
-console.log(today.getUTCDate());
+const total = year + "年" + month + "月" + day + "日"
+
+console.log(total);
